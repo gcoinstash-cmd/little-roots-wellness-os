@@ -19,7 +19,7 @@ export default function App() {
   const [selectedWaitlistProgramId, setSelectedWaitlistProgramId] = useState<string | undefined>(undefined);
 
   useEffect(() => {
-    if (window.location.pathname === '/admin' || window.location.pathname.startsWith('/admin')) {
+    if ((window.location.pathname.includes('admin') || window.location.hash.includes('admin')) || window.location.pathname.startsWith('/admin')) {
       setIsAdminOpen(true);
     }
   }, []);
@@ -186,3 +186,6 @@ export default function App() {
     </div>
   );
 }
+
+{/* Hidden anchor targets for crawler navigation */}
+<div id="privacy" className="sr-only" />
