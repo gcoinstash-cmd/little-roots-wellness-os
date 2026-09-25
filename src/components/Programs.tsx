@@ -61,7 +61,7 @@ export default function Programs({ onOpenWaitlistModal }: ProgramsProps) {
                   />
                   {/* Status Badge */}
                   <div className="absolute top-4 left-4">
-                    <span className={`text-[10px] font-bold tracking-widest uppercase px-3.5 py-1.5 rounded-full text-white ${
+                    <span className={`text-xs font-semibold tracking-wider font-bold tracking-widest uppercase px-3.5 py-1.5 rounded-full text-white ${
                       isFull 
                         ? 'bg-brand-charcoal' 
                         : isLimited
@@ -75,7 +75,7 @@ export default function Programs({ onOpenWaitlistModal }: ProgramsProps) {
                   {/* Ratio badge */}
                   <div className="absolute bottom-4 right-4 bg-white/95 backdrop-blur-md px-3 py-1.5 rounded-xl border border-brand-sand/30 flex items-center gap-1.5 shadow-sm text-brand-forest">
                     <Users className="w-3.5 h-3.5" />
-                    <span className="text-[10px] font-bold uppercase tracking-wider">
+                    <span className="text-xs font-semibold tracking-wider font-bold uppercase tracking-wider">
                       {program.ratio.split(' ')[0]} Ratio
                     </span>
                   </div>
@@ -104,7 +104,7 @@ export default function Programs({ onOpenWaitlistModal }: ProgramsProps) {
                   <div>
                     {/* Key feature bullets */}
                     <div className="border-t border-brand-sand/60 pt-5 mb-6">
-                      <p className="text-[10px] font-bold tracking-wider text-brand-forest uppercase mb-3">
+                      <p className="text-xs font-semibold tracking-wider font-bold tracking-wider text-brand-forest uppercase mb-3">
                         Curriculum Highlights:
                       </p>
                       <ul className="space-y-2">
@@ -130,7 +130,7 @@ export default function Programs({ onOpenWaitlistModal }: ProgramsProps) {
                       <button
                         type="button"
                         onClick={() => onOpenWaitlistModal(program.id)}
-                        className="bg-brand-sand/50 text-brand-forest text-[11px] font-bold tracking-wider px-4 py-2 rounded-full uppercase hover:bg-brand-forest hover:text-white transition duration-300"
+                        className="bg-brand-sand/50 text-brand-forest text-xs font-semibold font-bold tracking-wider px-4 py-2 rounded-full uppercase hover:bg-brand-forest hover:text-white transition duration-300"
                       >
                         Enroll
                       </button>
@@ -176,7 +176,7 @@ export default function Programs({ onOpenWaitlistModal }: ProgramsProps) {
               </button>
 
               <div className="absolute bottom-6 left-6 right-6 text-white">
-                <span className="text-[10px] font-bold tracking-widest text-[#FAF7F2]/90 uppercase px-2.5 py-1 bg-brand-terracotta rounded-md">
+                <span className="text-xs font-semibold tracking-wider font-bold tracking-widest text-[#FAF7F2]/90 uppercase px-2.5 py-1 bg-brand-terracotta rounded-md">
                   {selectedProgram.ageRange}
                 </span>
                 <h3 className="font-serif text-3xl md:text-4xl font-black mt-2 leading-none">
@@ -189,7 +189,7 @@ export default function Programs({ onOpenWaitlistModal }: ProgramsProps) {
             <div className="p-6 md:p-8">
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pb-6 border-b border-brand-sand mb-6">
                 <div>
-                  <span className="text-[10px] font-bold tracking-widest text-brand-terracotta uppercase block">
+                  <span className="text-xs font-semibold tracking-wider font-bold tracking-widest text-brand-terracotta uppercase block">
                     Daily Schedule
                   </span>
                   <span className="text-sm font-semibold text-brand-forest flex items-center gap-1.5 mt-1">
@@ -198,7 +198,7 @@ export default function Programs({ onOpenWaitlistModal }: ProgramsProps) {
                   </span>
                 </div>
                 <div>
-                  <span className="text-[10px] font-bold tracking-widest text-brand-terracotta uppercase block">
+                  <span className="text-xs font-semibold tracking-wider font-bold tracking-widest text-brand-terracotta uppercase block">
                     Teacher-Child Ratio
                   </span>
                   <span className="text-sm font-semibold text-brand-forest flex items-center gap-1.5 mt-1">
@@ -207,7 +207,7 @@ export default function Programs({ onOpenWaitlistModal }: ProgramsProps) {
                   </span>
                 </div>
                 <div>
-                  <span className="text-[10px] font-bold tracking-widest text-brand-terracotta uppercase block">
+                  <span className="text-xs font-semibold tracking-wider font-bold tracking-widest text-brand-terracotta uppercase block">
                     Monthly Tuition
                   </span>
                   <p className="text-sm font-bold text-brand-forest mt-1">

@@ -116,7 +116,7 @@ export default function Hero({ onOpenTourModal, onScrollViewToPrograms }: HeroPr
                 <p className="text-xs font-bold text-brand-forest uppercase tracking-wider leading-none">
                   Culturally Affirming Soil
                 </p>
-                <p className="text-[10px] text-brand-charcoal/70 font-sans mt-1 leading-normal">
+                <p className="text-xs font-semibold tracking-wider text-brand-charcoal/70 font-sans mt-1 leading-normal">
                   Fostering self-esteem and academic dominance starting at 6 weeks old.
                 </p>
               </div>

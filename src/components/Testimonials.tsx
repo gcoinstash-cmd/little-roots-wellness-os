@@ -77,7 +77,7 @@ export default function Testimonials() {
                   {current.neighborhood}
                 </span>
                 <span className="text-brand-gold">•</span>
-                <span className="font-bold text-brand-forest uppercase tracking-wider text-[10px]">
+                <span className="font-bold text-brand-forest uppercase tracking-wider text-xs font-semibold tracking-wider">
                   Parent since {current.parentSince}
                 </span>
               </div>

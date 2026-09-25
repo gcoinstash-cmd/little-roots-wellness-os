@@ -73,7 +73,7 @@ export default function WaitlistModal({ isOpen, programId = 'infant-care', onClo
               Elite Cohort Spot Queue!
             </h3>
 
-            <p className="text-xs md:text-sm text-brand-charcoal/80 leading-relaxed font-sans mb-6">
+            <p className="text-base font-semibold text-brand-charcoal/80 leading-relaxed font-sans mb-6">
               Dear <span className="font-semibold text-brand-forest">{formData.parentName}</span>, your family waitlist request for <span className="font-semibold text-brand-terracotta">{formData.childName || 'your young scholar'}</span> is verified.
             </p>
 
@@ -81,20 +81,20 @@ export default function WaitlistModal({ isOpen, programId = 'infant-care', onClo
             <div className="bg-brand-sand/50 p-5 rounded-2xl text-left border border-brand-sand/70 space-y-3 mb-8">
               <div className="flex justify-between items-center text-xs pb-2 border-b border-brand-sand/50">
                 <span className="font-medium text-brand-charcoal/70">Waitlist Target Cohort:</span>
-                <span className="font-bold text-brand-forest uppercase tracking-wider text-[10px]">{formData.cohort}</span>
+                <span className="font-bold text-brand-forest uppercase tracking-wider text-xs font-semibold tracking-wider">{formData.cohort}</span>
               </div>
               <div className="flex justify-between items-center text-xs pb-2 border-b border-brand-sand/50">
                 <span className="font-medium text-brand-charcoal/70">Program Requested:</span>
-                <span className="font-bold text-brand-forest uppercase tracking-wider text-[10px]">{selectedProgramDetails?.name}</span>
+                <span className="font-bold text-brand-forest uppercase tracking-wider text-xs font-semibold tracking-wider">{selectedProgramDetails?.name}</span>
               </div>
               <div className="flex justify-between items-center text-xs pb-2 border-b border-brand-sand/50">
                 <span className="font-medium text-brand-charcoal/70">Priority Pool Status:</span>
-                <span className="font-extrabold text-brand-terracotta uppercase tracking-[1px] text-[10px]">
+                <span className="font-extrabold text-brand-terracotta uppercase tracking-[1px] text-xs font-semibold tracking-wider">
                   {formData.entrepreneurAffiliation === 'yes' ? '★ Entrepreneur Pool' : 'Standard Pool'}
                 </span>
               </div>
               <div className="pt-1 select-none">
-                <p className="text-[10px] text-center font-bold text-emerald-700 bg-emerald-50 py-1.5 rounded-lg border border-emerald-100 uppercase tracking-widest leading-none">
+                <p className="text-xs font-semibold tracking-wider text-center font-bold text-emerald-700 bg-emerald-50 py-1.5 rounded-lg border border-emerald-100 uppercase tracking-widest leading-none">
                   ✔ Placement Probability Est: High (A+)
                 </p>
               </div>
@@ -107,7 +107,7 @@ export default function WaitlistModal({ isOpen, programId = 'infant-care', onClo
             <button
               type="button"
               onClick={onClose}
-              className="w-full bg-brand-forest hover:bg-brand-moss text-brand-cream font-bold text-xs tracking-widest py-3.5 rounded-full uppercase transition duration-200"
+              className="w-full bg-brand-forest hover:bg-brand-moss text-brand-cream font-bold text-base font-semibold min-h-[44px] tracking-widest py-3.5 rounded-full uppercase transition duration-200"
             >
               Back to Overview
             </button>
@@ -128,7 +128,7 @@ export default function WaitlistModal({ isOpen, programId = 'infant-care', onClo
 
             {/* Program selection */}
             <div>
-              <label className="text-[10px] font-bold tracking-wider text-brand-forest uppercase block mb-1.5">
+              <label className="text-sm font-semibold tracking-wider font-bold tracking-wider text-brand-forest uppercase block mb-1.5">
                 Target Pathway *
               </label>
               <div className="grid grid-cols-3 gap-2">
@@ -137,7 +137,7 @@ export default function WaitlistModal({ isOpen, programId = 'infant-care', onClo
                     key={p.id}
                     type="button"
                     onClick={() => handleProgramChange(p.id)}
-                    className={`px-2 py-2.5 rounded-xl text-[10px] font-bold uppercase tracking-wider border transition text-center col-span-1 cursor-pointer ${
+                    className={`px-2 py-2.5 rounded-xl text-xs font-semibold tracking-wider font-bold uppercase tracking-wider border transition text-center col-span-1 cursor-pointer ${
                       formData.programId === p.id
                         ? 'bg-brand-forest text-brand-cream border-brand-forest'
                         : 'bg-white text-brand-charcoal border-brand-sand hover:bg-brand-sand/30'
@@ -153,7 +153,7 @@ export default function WaitlistModal({ isOpen, programId = 'infant-care', onClo
             <div className="space-y-4 pt-2 border-t border-brand-sand/60">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="text-[10px] font-bold tracking-wider text-brand-forest uppercase block mb-1">
+                  <label className="text-sm font-semibold tracking-wider font-bold tracking-wider text-brand-forest uppercase block mb-1">
                     Parent Full Name *
                   </label>
                   <input
@@ -166,7 +166,7 @@ export default function WaitlistModal({ isOpen, programId = 'infant-care', onClo
                   />
                 </div>
                 <div>
-                  <label className="text-[10px] font-bold tracking-wider text-brand-forest uppercase block mb-1">
+                  <label className="text-sm font-semibold tracking-wider font-bold tracking-wider text-brand-forest uppercase block mb-1">
                     Parent Primary Email *
                   </label>
                   <input
@@ -182,7 +182,7 @@ export default function WaitlistModal({ isOpen, programId = 'infant-care', onClo
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="text-[10px] font-bold tracking-wider text-brand-forest uppercase block mb-1">
+                  <label className="text-sm font-semibold tracking-wider font-bold tracking-wider text-brand-forest uppercase block mb-1">
                     Phone Number *
                   </label>
                   <input
@@ -195,7 +195,7 @@ export default function WaitlistModal({ isOpen, programId = 'infant-care', onClo
                   />
                 </div>
                 <div>
-                  <label className="text-[10px] font-bold tracking-wider text-brand-forest uppercase block mb-1">
+                  <label className="text-sm font-semibold tracking-wider font-bold tracking-wider text-brand-forest uppercase block mb-1">
                     Child Name & Age *
                   </label>
                   <input
@@ -213,7 +213,7 @@ export default function WaitlistModal({ isOpen, programId = 'infant-care', onClo
             {/* Target Cohort & Sibling Affiliations */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2 border-t border-brand-sand/60">
               <div>
-                <label className="text-[10px] font-bold tracking-wider text-brand-forest uppercase block mb-1.5">
+                <label className="text-sm font-semibold tracking-wider font-bold tracking-wider text-brand-forest uppercase block mb-1.5">
                   Target Cohort *
                 </label>
                 <select
@@ -229,7 +229,7 @@ export default function WaitlistModal({ isOpen, programId = 'infant-care', onClo
               </div>
               
               <div>
-                <label className="text-[10px] font-bold tracking-wider text-brand-forest uppercase block mb-1.5 flex items-center gap-1">
+                <label className="text-sm font-semibold tracking-wider font-bold tracking-wider text-brand-forest uppercase block mb-1.5 flex items-center gap-1">
                   LA Business Owner Pool?
                 </label>
                 <select
@@ -245,7 +245,7 @@ export default function WaitlistModal({ isOpen, programId = 'infant-care', onClo
 
             {/* Special considerations notes area */}
             <div>
-              <label className="text-[10px] font-bold tracking-wider text-brand-forest uppercase block mb-1.5">
+              <label className="text-sm font-semibold tracking-wider font-bold tracking-wider text-brand-forest uppercase block mb-1.5">
                 Special requirements, dietary options, developmental outcomes
               </label>
               <textarea
@@ -258,7 +258,7 @@ export default function WaitlistModal({ isOpen, programId = 'infant-care', onClo
             </div>
 
             {/* Fee information notice info box */}
-            <div className="bg-brand-sand p-3.5 rounded-xl flex gap-2.5 items-start text-[10px] text-brand-charcoal/80 leading-relaxed border border-brand-sand/60">
+            <div className="bg-brand-sand p-3.5 rounded-xl flex gap-2.5 items-start text-xs font-semibold tracking-wider text-brand-charcoal/80 leading-relaxed border border-brand-sand/60">
               <Info className="w-4.5 h-4.5 text-brand-terracotta shrink-0" />
               <span>
                 * Waitlist placement is complimentary. Submitting this form secures your placement queue position without immediate service obligation. Sibling prioritizing terms apply.
@@ -270,14 +270,14 @@ export default function WaitlistModal({ isOpen, programId = 'infant-care', onClo
               <button
                 type="button"
                 onClick={onClose}
-                className="w-1/3 border border-brand-sand hover:bg-brand-sand/40 text-brand-charcoal text-xs font-bold tracking-widest py-3.5 rounded-full uppercase transition text-center"
+                className="w-1/3 border border-brand-sand hover:bg-brand-sand/40 text-brand-charcoal text-base font-semibold min-h-[44px] font-bold tracking-widest py-3.5 rounded-full uppercase transition text-center"
               >
                 Cancel
               </button>
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-2/3 bg-brand-forest hover:bg-brand-moss text-brand-cream text-xs font-bold tracking-widest py-3.5 rounded-full uppercase transition text-center disabled:opacity-75"
+                className="w-2/3 bg-brand-forest hover:bg-brand-moss text-brand-cream text-base font-semibold min-h-[44px] font-bold tracking-widest py-3.5 rounded-full uppercase transition text-center disabled:opacity-75"
               >
                 {isSubmitting ? 'Processing Application...' : 'Apply to Waitlist'}
               </button>

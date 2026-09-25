@@ -86,7 +86,7 @@ export default function Navbar({ onOpenTourModal, onOpenWaitlistModal }: NavbarP
                 <span className="font-serif text-lg font-bold tracking-tight text-brand-forest leading-none uppercase">
                   Little Roots
                 </span>
-                <span className="text-[10px] font-sans font-semibold tracking-widest text-brand-terracotta uppercase leading-none mt-1">
+                <span className="text-xs font-semibold tracking-wider font-sans font-semibold tracking-widest text-brand-terracotta uppercase leading-none mt-1">
                   Learning Center — LA
                 </span>
               </div>
@@ -121,14 +121,14 @@ export default function Navbar({ onOpenTourModal, onOpenWaitlistModal }: NavbarP
               <button
                 type="button"
                 onClick={onOpenTourModal}
-                className="text-xs font-semibold tracking-wider text-brand-forest hover:text-brand-terracotta transition py-2 px-3 uppercase"
+                className="text-base font-semibold min-h-[44px] font-semibold tracking-wider text-brand-forest hover:text-brand-terracotta transition py-2 px-3 uppercase"
               >
                 Book Tour
               </button>
               <button
                 type="button"
                 onClick={onOpenWaitlistModal}
-                className="bg-brand-forest hover:bg-brand-moss text-brand-cream text-xs font-bold tracking-widest py-3 px-5 rounded-full transition-all duration-300 transform active:scale-95 shadow-md shadow-brand-forest/10 uppercase"
+                className="bg-brand-forest hover:bg-brand-moss text-brand-cream text-base font-semibold min-h-[44px] font-bold tracking-widest py-3 px-5 rounded-full transition-all duration-300 transform active:scale-95 shadow-md shadow-brand-forest/10 uppercase"
               >
                 Enroll Now
               </button>
@@ -161,7 +161,7 @@ export default function Navbar({ onOpenTourModal, onOpenWaitlistModal }: NavbarP
 
         <div className="absolute right-0 top-0 bottom-0 w-[280px] bg-brand-cream p-6 shadow-2xl flex flex-col justify-between">
           <div className="mt-20">
-            <div className="text-[11px] font-bold tracking-widest text-brand-terracotta uppercase border-b border-brand-sand pb-2 mb-6">
+            <div className="text-xs font-semibold font-bold tracking-widest text-brand-terracotta uppercase border-b border-brand-sand pb-2 mb-6">
               Menu Sections
             </div>
             <nav className="flex flex-col gap-5">
@@ -207,7 +207,7 @@ export default function Navbar({ onOpenTourModal, onOpenWaitlistModal }: NavbarP
             >
               Apply to Waitlist
             </button>
-            <div className="text-center text-[10px] text-brand-charcoal/50 mt-4 leading-relaxed">
+            <div className="text-center text-xs font-semibold tracking-wider text-brand-charcoal/50 mt-4 leading-relaxed">
               Serving Baldwin Hills, Leimert Park, Ladera Heights, & View Park.
             </div>
           </div>

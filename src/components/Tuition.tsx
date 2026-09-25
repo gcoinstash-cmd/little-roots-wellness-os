@@ -52,7 +52,7 @@ export default function Tuition({ onOpenWaitlistModal }: TuitionProps) {
               >
                 {/* Popular highlight for Pre-K or highest demand */}
                 {isWaitlist && (
-                  <span className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-brand-gold text-brand-forest text-[10px] font-black tracking-widest uppercase px-4 py-1.5 rounded-full shadow-sm">
+                  <span className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-brand-gold text-brand-forest text-xs font-semibold tracking-wider font-black tracking-widest uppercase px-4 py-1.5 rounded-full shadow-sm">
                     High Demand Cohort
                   </span>
                 )}
@@ -64,7 +64,7 @@ export default function Tuition({ onOpenWaitlistModal }: TuitionProps) {
                       <h3 className="font-serif text-2xl font-bold text-brand-forest">
                         {prog.name}
                       </h3>
-                      <p className="text-[11px] font-bold text-brand-terracotta tracking-wider uppercase mt-1">
+                      <p className="text-xs font-semibold font-bold text-brand-terracotta tracking-wider uppercase mt-1">
                         {prog.ageRange}
                       </p>
                     </div>
@@ -90,7 +90,7 @@ export default function Tuition({ onOpenWaitlistModal }: TuitionProps) {
 
                   {/* Highlights checklist mini */}
                   <div className="mb-8 workspace-curriculum-list">
-                    <p className="text-[10px] font-bold tracking-wider text-brand-forest uppercase mb-3">
+                    <p className="text-xs font-semibold tracking-wider font-bold tracking-wider text-brand-forest uppercase mb-3">
                       Core focus:
                     </p>
                     <ul className="space-y-2.5">
@@ -118,7 +118,7 @@ export default function Tuition({ onOpenWaitlistModal }: TuitionProps) {
                     {prog.availability === 'Waitlist Active' ? 'Join Waitlist' : 'Apply to Enroll'}
                     <ArrowUpRight className="w-4 h-4" />
                   </button>
-                  <p className="text-[10px] text-center text-brand-charcoal/50 mt-3 font-sans">
+                  <p className="text-xs font-semibold tracking-wider text-center text-brand-charcoal/50 mt-3 font-sans">
                     Cohort starts rolling: Autumn & Spring schedules.
                   </p>
                 </div>
@@ -135,7 +135,7 @@ export default function Tuition({ onOpenWaitlistModal }: TuitionProps) {
             <div className="lg:col-span-5 flex flex-col justify-center">
               <div className="inline-flex items-center gap-2 text-brand-terracotta border border-brand-terracotta/20 bg-brand-terracotta/5 px-3.5 py-1.5 rounded-full w-fit mb-4">
                 <Info className="w-3.5 h-3.5" />
-                <span className="text-[10px] font-bold tracking-wider uppercase font-sans">
+                <span className="text-xs font-semibold tracking-wider font-bold tracking-wider uppercase font-sans">
                   The Premium Difference
                 </span>
               </div>
@@ -144,7 +144,7 @@ export default function Tuition({ onOpenWaitlistModal }: TuitionProps) {
                 What’s Integrated with All Enrolments
               </h3>
               
-              <p className="text-xs md:text-sm text-brand-charcoal/80 leading-relaxed font-sans mb-6">
+              <p className="text-base font-semibold text-brand-charcoal/80 leading-relaxed font-sans mb-6">
                 Unlike traditional preschools, we offer an all-inclusive pricing structure. There are no surprise fees for meals, nappies, supplies, or special field trips.
               </p>
 

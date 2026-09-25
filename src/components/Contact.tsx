@@ -152,7 +152,7 @@ export default function Contact() {
 
               {/* Leimert Park badge */}
               <div className="relative z-10 bg-white/90 backdrop-blur-md px-3 py-2 rounded-xl border border-brand-sand flex items-center gap-2">
-                <span className="text-[10px] font-extrabold text-brand-forest uppercase tracking-widest font-sans">
+                <span className="text-xs font-semibold tracking-wider font-extrabold text-brand-forest uppercase tracking-widest font-sans">
                   PROUD SOUTH LA SOIL
                 </span>
               </div>
@@ -172,7 +172,7 @@ export default function Contact() {
                   Your Tour Request Received!
                 </h3>
                 
-                <p className="text-xs md:text-sm text-brand-charcoal/80 leading-relaxed max-w-md mx-auto mb-8 font-sans">
+                <p className="text-base font-semibold text-brand-charcoal/80 leading-relaxed max-w-md mx-auto mb-8 font-sans">
                   We are absolutely delighted to welcome you and <span className="font-semibold text-brand-terracotta">{formData.childName || 'your young scholar'}</span> to our Leimert Park sanctuary! A Lead Admissions Guide will email and call you within 24 hours to finalize your scheduled tour on <span className="font-semibold text-brand-forest">{formData.selectedDate}</span> at <span className="font-semibold text-brand-forest">{formData.selectedTime || 'your preferred time'}</span>.
                 </p>
 
@@ -200,7 +200,7 @@ export default function Contact() {
                 <button
                   type="button"
                   onClick={handleReset}
-                  className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-[#C4622D] hover:text-[#1B3A2D] transition"
+                  className="inline-flex items-center gap-1.5 text-base font-semibold min-h-[44px] font-bold uppercase tracking-widest text-[#C4622D] hover:text-[#1B3A2D] transition"
                 >
                   <RefreshCw className="w-3.5 h-3.5" /> Book Another Tour
                 </button>
@@ -220,7 +220,7 @@ export default function Contact() {
                 {/* Two Column details fields */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
-                    <label className="text-[10px] font-bold tracking-wider text-brand-forest uppercase block mb-1.5">
+                    <label className="text-sm font-semibold tracking-wider font-bold tracking-wider text-brand-forest uppercase block mb-1.5">
                       Parent Full Name *
                     </label>
                     <input
@@ -233,7 +233,7 @@ export default function Contact() {
                     />
                   </div>
                   <div>
-                    <label className="text-[10px] font-bold tracking-wider text-brand-forest uppercase block mb-1.5">
+                    <label className="text-sm font-semibold tracking-wider font-bold tracking-wider text-brand-forest uppercase block mb-1.5">
                       Child Full Name (Optional)
                     </label>
                     <input
@@ -249,7 +249,7 @@ export default function Contact() {
                 {/* Second row: Email and Phone */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
-                    <label className="text-[10px] font-bold tracking-wider text-brand-forest uppercase block mb-1.5">
+                    <label className="text-sm font-semibold tracking-wider font-bold tracking-wider text-brand-forest uppercase block mb-1.5">
                       Email Address *
                     </label>
                     <input
@@ -262,7 +262,7 @@ export default function Contact() {
                     />
                   </div>
                   <div>
-                    <label className="text-[10px] font-bold tracking-wider text-brand-forest uppercase block mb-1.5">
+                    <label className="text-sm font-semibold tracking-wider font-bold tracking-wider text-brand-forest uppercase block mb-1.5">
                       Phone Number *
                     </label>
                     <input
@@ -279,7 +279,7 @@ export default function Contact() {
                 {/* Third row: Program and Child age */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
-                    <label className="text-[10px] font-bold tracking-wider text-brand-forest uppercase block mb-1.5">
+                    <label className="text-sm font-semibold tracking-wider font-bold tracking-wider text-brand-forest uppercase block mb-1.5">
                       Program of Interest
                     </label>
                     <select
@@ -295,7 +295,7 @@ export default function Contact() {
                     </select>
                   </div>
                   <div>
-                    <label className="text-[10px] font-bold tracking-wider text-brand-forest uppercase block mb-1.5">
+                    <label className="text-sm font-semibold tracking-wider font-bold tracking-wider text-brand-forest uppercase block mb-1.5">
                       Child’s Age / Estimated Due Date
                     </label>
                     <input
@@ -311,7 +311,7 @@ export default function Contact() {
                 {/* Fourth row: Select Tour Date and Preferred Time Slot */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
-                    <label className="text-[10px] font-bold tracking-wider text-brand-forest uppercase block mb-1.5">
+                    <label className="text-sm font-semibold tracking-wider font-bold tracking-wider text-brand-forest uppercase block mb-1.5">
                       Preferred Date *
                     </label>
                     <input
@@ -323,7 +323,7 @@ export default function Contact() {
                     />
                   </div>
                   <div>
-                    <label className="text-[10px] font-bold tracking-wider text-brand-forest uppercase block mb-1.5">
+                    <label className="text-sm font-semibold tracking-wider font-bold tracking-wider text-brand-forest uppercase block mb-1.5">
                       Target Time Slot *
                     </label>
                     <select
@@ -344,7 +344,7 @@ export default function Contact() {
 
                 {/* Special family notes */}
                 <div>
-                  <label className="text-[10px] font-bold tracking-wider text-brand-forest uppercase block mb-1.5">
+                  <label className="text-sm font-semibold tracking-wider font-bold tracking-wider text-brand-forest uppercase block mb-1.5">
                     Special notes (Allergies, developmental milestones, family values)
                   </label>
                   <textarea
@@ -360,7 +360,7 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-brand-forest hover:bg-brand-moss text-brand-cream font-bold text-xs tracking-widest py-4 rounded-xl uppercase transition disabled:opacity-75 flex items-center justify-center gap-2"
+                  className="w-full bg-brand-forest hover:bg-brand-moss text-brand-cream font-bold text-base font-semibold min-h-[44px] tracking-widest py-4 rounded-xl uppercase transition disabled:opacity-75 flex items-center justify-center gap-2"
                 >
                   {isSubmitting ? (
                     <>
@@ -373,7 +373,7 @@ export default function Contact() {
                   )}
                 </button>
 
-                <div className="text-center text-[10px] text-brand-charcoal/50">
+                <div className="text-center text-xs font-semibold tracking-wider text-brand-charcoal/50">
                   * All submission data is stored securely in agreement with Little Roots LA privacy guidelines.
                 </div>
 

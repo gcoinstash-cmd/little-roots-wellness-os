@@ -93,7 +93,7 @@ export default function App() {
                 “Building our future lords, entrepreneurs, and global champions.”
               </p>
             </div>
-            <div className="flex gap-6 text-[11px] font-bold text-brand-gold uppercase tracking-widest font-sans">
+            <div className="flex gap-6 text-xs font-semibold font-bold text-brand-gold uppercase tracking-widest font-sans">
               <span className="flex items-center gap-1">
                 <ShieldCheck className="w-3.5 h-3.5 shrink-0 text-brand-cream" /> Standard Licenced Care
               </span>
@@ -140,7 +140,7 @@ export default function App() {
               <button
                 type="button"
                 onClick={handleScrollToTour}
-                className="bg-brand-gold hover:bg-brand-gold/90 text-brand-forest font-bold text-xs tracking-widest py-3.5 px-8 rounded-full uppercase transition duration-200 shadow"
+                className="bg-brand-gold hover:bg-brand-gold/90 text-brand-forest font-bold text-base font-semibold min-h-[44px] tracking-widest py-3.5 px-8 rounded-full uppercase transition duration-200 shadow"
               >
                 Schedule Private Walkthrough
               </button>

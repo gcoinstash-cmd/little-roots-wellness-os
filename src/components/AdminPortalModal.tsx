@@ -67,9 +67,9 @@ export default function AdminPortalModal({ isOpen, onClose }: AdminPortalModalPr
             <div>
               <div className="flex items-center gap-2">
                 <span className="font-mono text-xs uppercase tracking-wider text-emerald-400 font-bold">LITTLE ROOTS WELLNESS OS</span>
-                <span className="text-[10px] px-2 py-0.5 rounded bg-zinc-800 text-zinc-400 font-mono">v1.0.0 VIP</span>
+                <span className="text-xs font-semibold tracking-wider px-2 py-0.5 rounded bg-zinc-800 text-zinc-400 font-mono">v1.0.0 VIP</span>
               </div>
-              <p className="text-xs text-zinc-400">Pediatric Developmental Clinic &amp; Early Academy Console</p>
+              <p className="text-base text-zinc-200 leading-relaxed">Pediatric Developmental Clinic &amp; Early Academy Console</p>
             </div>
           </div>
           <button
@@ -88,7 +88,7 @@ export default function AdminPortalModal({ isOpen, onClose }: AdminPortalModalPr
             </div>
             <div className="space-y-2">
               <h3 className="font-display font-medium text-xl text-white">Academy Director Authentication</h3>
-              <p className="text-xs text-zinc-400 leading-relaxed">
+              <p className="text-base text-zinc-200 leading-relaxed leading-relaxed">
                 Enter your administrative key to view student admissions, waitlist registries, and state licensing telemetry.
               </p>
             </div>
@@ -178,7 +178,7 @@ export default function AdminPortalModal({ isOpen, onClose }: AdminPortalModalPr
                     {metrics.map((m, idx) => (
                       <div key={idx} className="p-4 rounded-xl bg-zinc-900/60 border border-zinc-800 space-y-2">
                         <div className="flex items-center justify-between">
-                          <span className="text-[10px] font-mono text-zinc-400 uppercase tracking-wider">{m.label}</span>
+                          <span className="text-xs font-semibold tracking-wider font-mono text-zinc-400 uppercase tracking-wider">{m.label}</span>
                           <m.icon className={`w-4 h-4 ${m.color}`} />
                         </div>
                         <p className="text-xl font-bold font-mono text-white">{m.value}</p>
@@ -210,7 +210,7 @@ export default function AdminPortalModal({ isOpen, onClose }: AdminPortalModalPr
                   </div>
                   <div className="border border-zinc-800 rounded-xl overflow-hidden">
                     <table className="w-full text-left text-xs">
-                      <thead className="bg-zinc-900 text-zinc-400 font-mono uppercase text-[10px] border-b border-zinc-800">
+                      <thead className="bg-zinc-900 text-zinc-400 font-mono uppercase text-xs font-semibold tracking-wider border-b border-zinc-800">
                         <tr>
                           <th className="p-3">ID</th>
                           <th className="p-3">Child Name</th>
@@ -228,7 +228,7 @@ export default function AdminPortalModal({ isOpen, onClose }: AdminPortalModalPr
                             <td className="p-3 text-zinc-400">{w.program}</td>
                             <td className="p-3">{w.parent}</td>
                             <td className="p-3">
-                              <span className={`px-2 py-0.5 rounded text-[10px] uppercase ${
+                              <span className={`px-2 py-0.5 rounded text-xs font-semibold tracking-wider uppercase ${
                                 w.status === 'offered' ? 'bg-emerald-950 text-emerald-400 border border-emerald-800' :
                                 w.status === 'verified' ? 'bg-blue-950 text-blue-400 border border-blue-800' :
                                 'bg-zinc-800 text-zinc-400'
@@ -257,7 +257,7 @@ export default function AdminPortalModal({ isOpen, onClose }: AdminPortalModalPr
                         <div className="space-y-1">
                           <p className="font-semibold text-sm text-white">{c.cohort}</p>
                           <p className="text-xs text-emerald-400/90 font-mono">{c.focus}</p>
-                          <p className="text-[11px] text-zinc-400">{c.ratio}</p>
+                          <p className="text-xs font-semibold text-zinc-400">{c.ratio}</p>
                         </div>
                         <span className="px-3 py-1 rounded-full bg-emerald-950/60 text-emerald-400 border border-emerald-800 text-xs font-mono font-bold">
                           {c.capacity}
@@ -272,20 +272,20 @@ export default function AdminPortalModal({ isOpen, onClose }: AdminPortalModalPr
                 <div className="space-y-4">
                   <div className="p-4 rounded-xl bg-zinc-900/60 border border-zinc-800 space-y-2">
                     <h4 className="text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider">PostgreSQL Schema &amp; RLS Policies</h4>
-                    <p className="text-xs text-zinc-400 leading-relaxed">
+                    <p className="text-base text-zinc-200 leading-relaxed leading-relaxed">
                       Wired for high-security pediatric records, student admissions waitlists, and enrollment billing ledgers.
                     </p>
                     <div className="grid grid-cols-3 gap-2 pt-2">
                       <div className="p-2.5 rounded-lg bg-zinc-950 border border-zinc-800 text-center">
-                        <p className="text-[10px] font-mono text-zinc-500">TABLE 1</p>
+                        <p className="text-xs font-semibold tracking-wider font-mono text-zinc-300">TABLE 1</p>
                         <p className="text-xs font-mono font-bold text-white">admissions_waitlist</p>
                       </div>
                       <div className="p-2.5 rounded-lg bg-zinc-950 border border-zinc-800 text-center">
-                        <p className="text-[10px] font-mono text-zinc-500">TABLE 2</p>
+                        <p className="text-xs font-semibold tracking-wider font-mono text-zinc-300">TABLE 2</p>
                         <p className="text-xs font-mono font-bold text-white">development_milestones</p>
                       </div>
                       <div className="p-2.5 rounded-lg bg-zinc-950 border border-zinc-800 text-center">
-                        <p className="text-[10px] font-mono text-zinc-500">TABLE 3</p>
+                        <p className="text-xs font-semibold tracking-wider font-mono text-zinc-300">TABLE 3</p>
                         <p className="text-xs font-mono font-bold text-white">parent_consultations</p>
                       </div>
                     </div>

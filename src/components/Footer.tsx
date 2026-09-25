@@ -122,7 +122,7 @@ export default function Footer() {
         </div>
 
         {/* Base Copyright & Back to Top details */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-brand-cream/60 gap-4">
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs font-semibold text-brand-cream/60 gap-4">
           <div className="flex items-center gap-1.5 flex-wrap justify-center font-sans tracking-wide">
             <span>&copy; {new Date().getFullYear()} Little Roots LLC.</span>
             <span>All rights reserved.</span>
@@ -136,7 +136,7 @@ export default function Footer() {
           <a
             href="#hero"
             onClick={handleScrollTop}
-            className="inline-flex items-center gap-1.5 text-brand-gold hover:text-brand-cream transition uppercase tracking-widest font-bold text-[10px]"
+            className="inline-flex items-center gap-1.5 text-brand-gold hover:text-brand-cream transition uppercase tracking-widest font-bold text-xs font-semibold tracking-wider"
           >
             Back to Top <ArrowUp className="w-3.5 h-3.5" />
           </a>

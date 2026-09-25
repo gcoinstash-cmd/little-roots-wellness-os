@@ -69,7 +69,7 @@ export default function Teachers() {
                     </h3>
 
                     {/* Highly polished credentials layout */}
-                    <div className="bg-brand-sand/40 border border-brand-sand/60 px-3 py-2 rounded-xl text-[11px] font-semibold text-brand-forest/90 leading-normal mb-5">
+                    <div className="bg-brand-sand/40 border border-brand-sand/60 px-3 py-2 rounded-xl text-xs font-semibold font-semibold text-brand-forest/90 leading-normal mb-5">
                       {teacher.credentials}
                     </div>
 

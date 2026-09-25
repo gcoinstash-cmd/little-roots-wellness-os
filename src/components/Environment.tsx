@@ -82,7 +82,7 @@ export default function Environment() {
                 </div>
 
                 {/* Category Badge */}
-                <span className="absolute bottom-3 left-3 bg-brand-forest/90 text-[10px] font-bold tracking-wider text-brand-cream px-2.5 py-1 rounded-md uppercase">
+                <span className="absolute bottom-3 left-3 bg-brand-forest/90 text-xs font-semibold tracking-wider font-bold tracking-wider text-brand-cream px-2.5 py-1 rounded-md uppercase">
                   {img.category}
                 </span>
               </div>
@@ -105,20 +105,20 @@ export default function Environment() {
           <div className="absolute top-0 right-0 w-32 h-32 bg-brand-gold/10 rounded-bl-full pointer-events-none" />
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-8">
-              <span className="text-[10px] font-bold tracking-widest text-brand-gold uppercase block mb-2">
+              <span className="text-xs font-semibold tracking-wider font-bold tracking-widest text-brand-gold uppercase block mb-2">
                 Aesthetics of Joy
               </span>
               <h3 className="font-serif text-2xl md:text-3xl font-bold leading-tight mb-4">
                 Designed to affirm their identity and nurture their potential.
               </h3>
-              <p className="text-xs md:text-sm text-brand-cream/80 max-w-xl">
+              <p className="text-base font-semibold text-brand-cream/80 max-w-xl">
                 Every bookshelf features authors and protagonists of color. Every toy is handselected to emphasize ecological harmony, mathematical order, and fine tactile coordination. This is organic elegance built specifically for Black brilliance.
               </p>
             </div>
             <div className="lg:col-span-4 flex lg:justify-end">
               <div className="text-center lg:text-right">
                 <p className="text-3xl font-serif font-black text-brand-gold">100%</p>
-                <p className="text-[10px] uppercase font-bold tracking-wider mt-1 text-white/90">
+                <p className="text-xs font-semibold tracking-wider uppercase font-bold tracking-wider mt-1 text-white/90">
                   Toxin-Free Organic Wood Toys Only
                 </p>
               </div>
@@ -162,7 +162,7 @@ export default function Environment() {
 
               <div className="md:col-span-4 p-8 flex flex-col justify-between h-full min-h-[250px] md:h-[500px]">
                 <div>
-                  <span className="text-[10px] font-bold tracking-widest text-brand-terracotta uppercase block mb-1">
+                  <span className="text-xs font-semibold tracking-wider font-bold tracking-widest text-brand-terracotta uppercase block mb-1">
                     {lightboxImage.category} Sanctuary
                   </span>
                   <h4 className="font-serif text-2xl font-black text-brand-forest leading-tight mb-4">
@@ -174,10 +174,10 @@ export default function Environment() {
                 </div>
 
                 <div className="border-t border-brand-sand/60 pt-4">
-                  <p className="text-[10px] font-bold tracking-widest text-brand-forest uppercase leading-none mb-1">
+                  <p className="text-xs font-semibold tracking-wider font-bold tracking-widest text-brand-forest uppercase leading-none mb-1">
                     Design Detail
                   </p>
-                  <p className="text-[11px] text-brand-charcoal/60 leading-normal">
+                  <p className="text-xs font-semibold text-brand-charcoal/60 leading-normal">
                     Designed by interior specialists to decrease sensory overstimulation and promote deeply focused work.
                   </p>
                 </div>

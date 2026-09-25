@@ -79,7 +79,7 @@ export default function Philosophy() {
                     <h3 className="font-serif text-xl font-bold text-brand-forest group-hover:text-brand-terracotta transition-colors duration-200">
                       {pillar.title}
                     </h3>
-                    <p className="text-[11px] font-bold tracking-wider text-brand-terracotta/80 uppercase font-sans">
+                    <p className="text-xs font-semibold font-bold tracking-wider text-brand-terracotta/80 uppercase font-sans">
                       {pillar.tagline}
                     </p>
                   </div>
